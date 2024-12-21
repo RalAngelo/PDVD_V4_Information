@@ -9,7 +9,7 @@ void PDVD_V4(TString volName="")
   gSystem->Load("libGeom");
   gSystem->Load("libGdml");
 
-  TGeoManager::Import("PDVD_V4.gdml");
+  TGeoManager::Import("PDVD_V4_Geometry.gdml");
 
  TGeoIterator next(gGeoManager->GetTopVolume());
  TGeoNode *node = 0;

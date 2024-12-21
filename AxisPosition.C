@@ -11,7 +11,7 @@ void PDVD_V4_with_axes(TString volName = "")
     gSystem->Load("libGdml");
 
     // Import the GDML file
-    TGeoManager::Import("PDVD_V4.gdml");
+    TGeoManager::Import("PDVD_V4_Geometry.gdml");
 
     TGeoIterator next(gGeoManager->GetTopVolume());
     TGeoNode* node = nullptr;
